@@ -1,0 +1,624 @@
+/rdsdbbin/mysql/bin/mysqld, Version: 5.7.37-log (Source distribution). started with:
+Tcp port: 3306  Unix socket: /tmp/mysql.sock
+Time                 Id Command    Argument
+2023-06-19T13:00:02.151261Z	    3 Query	SELECT 1
+2023-06-19T13:00:02.151815Z	    3 Query	set sql_log_bin = 1
+2023-06-19T13:00:04.353407Z	    3 Query	SELECT 1
+2023-06-19T13:00:04.354085Z	    3 Query	SELECT 1
+2023-06-19T13:00:04.354990Z	    3 Query	SELECT 1
+2023-06-19T13:00:04.355552Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:00:04.356325Z	    3 Query	SELECT 1
+2023-06-19T13:00:04.356803Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:00:04.386306Z	    3 Query	SELECT 1
+2023-06-19T13:00:04.386958Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:00:19.354158Z	    3 Query	SELECT 1
+2023-06-19T13:00:19.354734Z	    3 Query	SELECT 1
+2023-06-19T13:00:19.355626Z	    3 Query	SELECT 1
+2023-06-19T13:00:19.356186Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:00:19.356938Z	    3 Query	SELECT 1
+2023-06-19T13:00:19.357410Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:00:19.387347Z	    3 Query	SELECT 1
+2023-06-19T13:00:19.387863Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:00:25.099386Z	    3 Query	SELECT 1
+2023-06-19T13:00:25.107599Z	    3 Query	SELECT NAME, VALUE FROM mysql.rds_configuration
+2023-06-19T13:00:25.181139Z	    3 Query	SELECT 1
+2023-06-19T13:00:25.185422Z	    3 Query	SELECT @@session.transaction_read_only
+2023-06-19T13:00:25.185745Z	    3 Query	PURGE BINARY LOGS BEFORE '2023-06-19 12:55:00'
+2023-06-19T13:00:34.352328Z	    3 Query	SELECT 1
+2023-06-19T13:00:34.352944Z	    3 Query	SELECT 1
+2023-06-19T13:00:34.353843Z	    3 Query	SELECT 1
+2023-06-19T13:00:34.354406Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:00:34.355230Z	    3 Query	SELECT 1
+2023-06-19T13:00:34.355713Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:00:34.390208Z	    3 Query	SELECT 1
+2023-06-19T13:00:34.390759Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:00:49.353598Z	    3 Query	SELECT 1
+2023-06-19T13:00:49.354147Z	    3 Query	SELECT 1
+2023-06-19T13:00:49.355043Z	    3 Query	SELECT 1
+2023-06-19T13:00:49.355595Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:00:49.356358Z	    3 Query	SELECT 1
+2023-06-19T13:00:49.356827Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:00:49.389911Z	    3 Query	SELECT 1
+2023-06-19T13:00:49.390419Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:01:00.022029Z	    3 Query	SELECT 1
+2023-06-19T13:01:00.096345Z	    3 Query	SELECT count(*) from mysql.rds_history WHERE action = 'disable set master' GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port,master_user,master_log_file ,master_log_pos,master_ssl ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:01:00.494892Z	    3 Query	SELECT 1
+2023-06-19T13:01:00.614405Z	    3 Query	SELECT count(*) from mysql.rds_replication_status WHERE master_host IS NOT NULL and master_port IS NOT NULL GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:01:04.353364Z	    3 Query	SELECT 1
+2023-06-19T13:01:04.353937Z	    3 Query	SELECT 1
+2023-06-19T13:01:04.354860Z	    3 Query	SELECT 1
+2023-06-19T13:01:04.355455Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:01:04.356259Z	    3 Query	SELECT 1
+2023-06-19T13:01:04.356741Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:01:04.394945Z	    3 Query	SELECT 1
+2023-06-19T13:01:04.395535Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:01:19.353159Z	    3 Query	SELECT 1
+2023-06-19T13:01:19.353727Z	    3 Query	SELECT 1
+2023-06-19T13:01:19.354615Z	    3 Query	SELECT 1
+2023-06-19T13:01:19.355227Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:01:19.356023Z	    3 Query	SELECT 1
+2023-06-19T13:01:19.356536Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:01:19.391572Z	    3 Query	SELECT 1
+2023-06-19T13:01:19.392107Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:01:34.353591Z	    3 Query	SELECT 1
+2023-06-19T13:01:34.354136Z	    3 Query	SELECT 1
+2023-06-19T13:01:34.355021Z	    3 Query	SELECT 1
+2023-06-19T13:01:34.355573Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:01:34.356333Z	    3 Query	SELECT 1
+2023-06-19T13:01:34.356805Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:01:34.391494Z	    3 Query	SELECT 1
+2023-06-19T13:01:34.392047Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:01:49.353689Z	    3 Query	SELECT 1
+2023-06-19T13:01:49.354272Z	    3 Query	SELECT 1
+2023-06-19T13:01:49.355194Z	    3 Query	SELECT 1
+2023-06-19T13:01:49.355769Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:01:49.356551Z	    3 Query	SELECT 1
+2023-06-19T13:01:49.357040Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:01:49.391479Z	    3 Query	SELECT 1
+2023-06-19T13:01:49.392023Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:02:00.021273Z	    3 Query	SELECT 1
+2023-06-19T13:02:00.096868Z	    3 Query	SELECT count(*) from mysql.rds_history WHERE action = 'disable set master' GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port,master_user,master_log_file ,master_log_pos,master_ssl ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:02:00.320499Z	    3 Query	SELECT 1
+2023-06-19T13:02:00.347182Z	    3 Query	SELECT count(*) from mysql.rds_replication_status WHERE master_host IS NOT NULL and master_port IS NOT NULL GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:02:04.354065Z	    3 Query	SELECT 1
+2023-06-19T13:02:04.354636Z	    3 Query	SELECT 1
+2023-06-19T13:02:04.355534Z	    3 Query	SELECT 1
+2023-06-19T13:02:04.356093Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:02:04.356848Z	    3 Query	SELECT 1
+2023-06-19T13:02:04.357355Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:02:04.393206Z	    3 Query	SELECT 1
+2023-06-19T13:02:04.393763Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:02:19.353865Z	    3 Query	SELECT 1
+2023-06-19T13:02:19.354445Z	    3 Query	SELECT 1
+2023-06-19T13:02:19.355361Z	    3 Query	SELECT 1
+2023-06-19T13:02:19.355921Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:02:19.356687Z	    3 Query	SELECT 1
+2023-06-19T13:02:19.357219Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:02:19.390459Z	    3 Query	SELECT 1
+2023-06-19T13:02:19.391010Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:02:34.357069Z	    3 Query	SELECT 1
+2023-06-19T13:02:34.370942Z	    3 Query	SELECT 1
+2023-06-19T13:02:34.388986Z	    3 Query	SELECT 1
+2023-06-19T13:02:34.398906Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:02:34.430898Z	    3 Query	SELECT 1
+2023-06-19T13:02:34.446900Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:02:34.464168Z	    3 Query	SELECT 1
+2023-06-19T13:02:34.465044Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:02:34.465841Z	    3 Query	SELECT 1
+2023-06-19T13:02:34.466630Z	    3 Query	SELECT @@session.transaction_read_only
+2023-06-19T13:02:34.466970Z	    3 Query	INSERT INTO mysql.rds_heartbeat2(id, value) values (1,1687179754465) ON DUPLICATE KEY UPDATE value = 1687179754465
+2023-06-19T13:02:34.478617Z	    3 Query	SELECT 1
+2023-06-19T13:02:34.479128Z	    3 Query	SELECT @@session.transaction_read_only
+2023-06-19T13:02:34.479411Z	    3 Query	COMMIT
+2023-06-19T13:02:34.546074Z	    3 Query	SELECT 1
+2023-06-19T13:02:34.549954Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:02:49.353558Z	    3 Query	SELECT 1
+2023-06-19T13:02:49.354181Z	    3 Query	SELECT 1
+2023-06-19T13:02:49.355161Z	    3 Query	SELECT 1
+2023-06-19T13:02:49.355816Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:02:49.356657Z	    3 Query	SELECT 1
+2023-06-19T13:02:49.357144Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:02:49.387936Z	    3 Query	SELECT 1
+2023-06-19T13:02:49.388477Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:03:00.086664Z	    3 Query	SELECT 1
+2023-06-19T13:03:00.148231Z	    3 Query	SELECT count(*) from mysql.rds_history WHERE action = 'disable set master' GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port,master_user,master_log_file ,master_log_pos,master_ssl ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:03:00.474770Z	    3 Query	SELECT 1
+2023-06-19T13:03:00.478499Z	    3 Query	SELECT count(*) from mysql.rds_replication_status WHERE master_host IS NOT NULL and master_port IS NOT NULL GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:03:04.353632Z	    3 Query	SELECT 1
+2023-06-19T13:03:04.354180Z	    3 Query	SELECT 1
+2023-06-19T13:03:04.355080Z	    3 Query	SELECT 1
+2023-06-19T13:03:04.355620Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:03:04.356385Z	    3 Query	SELECT 1
+2023-06-19T13:03:04.356852Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:03:04.386500Z	    3 Query	SELECT 1
+2023-06-19T13:03:04.387138Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:03:19.353518Z	    3 Query	SELECT 1
+2023-06-19T13:03:19.354145Z	    3 Query	SELECT 1
+2023-06-19T13:03:19.355135Z	    3 Query	SELECT 1
+2023-06-19T13:03:19.355758Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:03:19.356598Z	    3 Query	SELECT 1
+2023-06-19T13:03:19.357076Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:03:19.388622Z	    3 Query	SELECT 1
+2023-06-19T13:03:19.389153Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:03:34.353915Z	    3 Query	SELECT 1
+2023-06-19T13:03:34.354544Z	    3 Query	SELECT 1
+2023-06-19T13:03:34.355467Z	    3 Query	SELECT 1
+2023-06-19T13:03:34.356042Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:03:34.356807Z	    3 Query	SELECT 1
+2023-06-19T13:03:34.357297Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:03:34.388180Z	    3 Query	SELECT 1
+2023-06-19T13:03:34.388731Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:03:49.353638Z	    3 Query	SELECT 1
+2023-06-19T13:03:49.354195Z	    3 Query	SELECT 1
+2023-06-19T13:03:49.355084Z	    3 Query	SELECT 1
+2023-06-19T13:03:49.355638Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:03:49.356402Z	    3 Query	SELECT 1
+2023-06-19T13:03:49.356864Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:03:49.405525Z	    3 Query	SELECT 1
+2023-06-19T13:03:49.406090Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:04:00.089678Z	    3 Query	SELECT 1
+2023-06-19T13:04:00.162703Z	    3 Query	SELECT count(*) from mysql.rds_history WHERE action = 'disable set master' GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port,master_user,master_log_file ,master_log_pos,master_ssl ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:04:00.550900Z	    3 Query	SELECT 1
+2023-06-19T13:04:00.566930Z	    3 Query	SELECT count(*) from mysql.rds_replication_status WHERE master_host IS NOT NULL and master_port IS NOT NULL GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:04:04.353618Z	    3 Query	SELECT 1
+2023-06-19T13:04:04.354294Z	    3 Query	SELECT 1
+2023-06-19T13:04:04.355230Z	    3 Query	SELECT 1
+2023-06-19T13:04:04.355802Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:04:04.356570Z	    3 Query	SELECT 1
+2023-06-19T13:04:04.357081Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:04:04.386008Z	    3 Query	SELECT 1
+2023-06-19T13:04:04.386502Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:04:19.353751Z	    3 Query	SELECT 1
+2023-06-19T13:04:19.354300Z	    3 Query	SELECT 1
+2023-06-19T13:04:19.355233Z	    3 Query	SELECT 1
+2023-06-19T13:04:19.355814Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:04:19.356587Z	    3 Query	SELECT 1
+2023-06-19T13:04:19.357065Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:04:19.387611Z	    3 Query	SELECT 1
+2023-06-19T13:04:19.388166Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:04:34.360070Z	    3 Query	SELECT 1
+2023-06-19T13:04:34.360774Z	    3 Query	SELECT 1
+2023-06-19T13:04:34.361643Z	    3 Query	SELECT 1
+2023-06-19T13:04:34.362186Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:04:34.362971Z	    3 Query	SELECT 1
+2023-06-19T13:04:34.363443Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:04:34.392441Z	    3 Query	SELECT 1
+2023-06-19T13:04:34.392941Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:04:49.353325Z	    3 Query	SELECT 1
+2023-06-19T13:04:49.353896Z	    3 Query	SELECT 1
+2023-06-19T13:04:49.354755Z	    3 Query	SELECT 1
+2023-06-19T13:04:49.355337Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:04:49.356116Z	    3 Query	SELECT 1
+2023-06-19T13:04:49.356590Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:04:49.378294Z	    7 Connect	rdsadmin@localhost on  using Socket
+2023-06-19T13:04:49.378350Z	    7 Statistics	
+2023-06-19T13:04:49.380906Z	    7 Quit	
+2023-06-19T13:04:49.409077Z	    3 Query	SELECT 1
+2023-06-19T13:04:49.409617Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:05:00.043061Z	    3 Query	SELECT 1
+2023-06-19T13:05:00.116020Z	    3 Query	SELECT count(*) from mysql.rds_history WHERE action = 'disable set master' GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port,master_user,master_log_file ,master_log_pos,master_ssl ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:05:00.418066Z	    3 Query	SELECT 1
+2023-06-19T13:05:00.550649Z	    3 Query	SELECT count(*) from mysql.rds_replication_status WHERE master_host IS NOT NULL and master_port IS NOT NULL GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:05:00.589746Z	    3 Query	SELECT 1
+2023-06-19T13:05:00.600618Z	    3 Query	SELECT @@session.transaction_read_only
+2023-06-19T13:05:00.607029Z	    3 Query	flush logs
+/rdsdbbin/mysql/bin/mysqld, Version: 5.7.37-log (Source distribution). started with:
+Tcp port: 3306  Unix socket: /tmp/mysql.sock
+Time                 Id Command    Argument
+2023-06-19T13:05:04.353826Z	    3 Query	SELECT 1
+2023-06-19T13:05:04.354456Z	    3 Query	SELECT 1
+2023-06-19T13:05:04.355347Z	    3 Query	SELECT 1
+2023-06-19T13:05:04.355901Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:05:04.356663Z	    3 Query	SELECT 1
+2023-06-19T13:05:04.357133Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:05:04.386302Z	    3 Query	SELECT 1
+2023-06-19T13:05:04.386801Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:05:19.353165Z	    3 Query	SELECT 1
+2023-06-19T13:05:19.353711Z	    3 Query	SELECT 1
+2023-06-19T13:05:19.354562Z	    3 Query	SELECT 1
+2023-06-19T13:05:19.355165Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:05:19.355956Z	    3 Query	SELECT 1
+2023-06-19T13:05:19.356437Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:05:19.386652Z	    3 Query	SELECT 1
+2023-06-19T13:05:19.387286Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:05:25.009246Z	    3 Query	SELECT 1
+2023-06-19T13:05:25.018434Z	    3 Query	SELECT NAME, VALUE FROM mysql.rds_configuration
+2023-06-19T13:05:25.081921Z	    3 Query	SELECT 1
+2023-06-19T13:05:25.108917Z	    3 Query	SELECT @@session.transaction_read_only
+2023-06-19T13:05:25.109352Z	    3 Query	PURGE BINARY LOGS BEFORE '2023-06-19 13:00:01'
+2023-06-19T13:05:34.354000Z	    3 Query	SELECT 1
+2023-06-19T13:05:34.354582Z	    3 Query	SELECT 1
+2023-06-19T13:05:34.355508Z	    3 Query	SELECT 1
+2023-06-19T13:05:34.356082Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:05:34.356872Z	    3 Query	SELECT 1
+2023-06-19T13:05:34.357354Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:05:34.386960Z	    3 Query	SELECT 1
+2023-06-19T13:05:34.387486Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:05:49.353396Z	    3 Query	SELECT 1
+2023-06-19T13:05:49.353939Z	    3 Query	SELECT 1
+2023-06-19T13:05:49.354795Z	    3 Query	SELECT 1
+2023-06-19T13:05:49.355375Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:05:49.356132Z	    3 Query	SELECT 1
+2023-06-19T13:05:49.356590Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:05:49.389267Z	    3 Query	SELECT 1
+2023-06-19T13:05:49.389772Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:06:00.092424Z	    3 Query	SELECT 1
+2023-06-19T13:06:00.151027Z	    3 Query	SELECT count(*) from mysql.rds_history WHERE action = 'disable set master' GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port,master_user,master_log_file ,master_log_pos,master_ssl ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:06:00.316942Z	    3 Query	SELECT 1
+2023-06-19T13:06:00.336453Z	    3 Query	SELECT count(*) from mysql.rds_replication_status WHERE master_host IS NOT NULL and master_port IS NOT NULL GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:06:04.353809Z	    3 Query	SELECT 1
+2023-06-19T13:06:04.354356Z	    3 Query	SELECT 1
+2023-06-19T13:06:04.355309Z	    3 Query	SELECT 1
+2023-06-19T13:06:04.355891Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:06:04.356684Z	    3 Query	SELECT 1
+2023-06-19T13:06:04.357155Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:06:04.386308Z	    3 Query	SELECT 1
+2023-06-19T13:06:04.386927Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:06:19.353092Z	    3 Query	SELECT 1
+2023-06-19T13:06:19.353677Z	    3 Query	SELECT 1
+2023-06-19T13:06:19.354541Z	    3 Query	SELECT 1
+2023-06-19T13:06:19.355133Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:06:19.355948Z	    3 Query	SELECT 1
+2023-06-19T13:06:19.356433Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:06:19.391037Z	    3 Query	SELECT 1
+2023-06-19T13:06:19.391587Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:06:34.353529Z	    3 Query	SELECT 1
+2023-06-19T13:06:34.354179Z	    3 Query	SELECT 1
+2023-06-19T13:06:34.355138Z	    3 Query	SELECT 1
+2023-06-19T13:06:34.355692Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:06:34.356498Z	    3 Query	SELECT 1
+2023-06-19T13:06:34.357023Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:06:34.391597Z	    3 Query	SELECT 1
+2023-06-19T13:06:34.392140Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:06:49.353170Z	    3 Query	SELECT 1
+2023-06-19T13:06:49.353725Z	    3 Query	SELECT 1
+2023-06-19T13:06:49.354578Z	    3 Query	SELECT 1
+2023-06-19T13:06:49.355162Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:06:49.355969Z	    3 Query	SELECT 1
+2023-06-19T13:06:49.356433Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:06:49.390485Z	    3 Query	SELECT 1
+2023-06-19T13:06:49.391068Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:07:00.020284Z	    3 Query	SELECT 1
+2023-06-19T13:07:00.085427Z	    3 Query	SELECT count(*) from mysql.rds_history WHERE action = 'disable set master' GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port,master_user,master_log_file ,master_log_pos,master_ssl ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:07:00.311463Z	    3 Query	SELECT 1
+2023-06-19T13:07:00.337222Z	    3 Query	SELECT count(*) from mysql.rds_replication_status WHERE master_host IS NOT NULL and master_port IS NOT NULL GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:07:04.353488Z	    3 Query	SELECT 1
+2023-06-19T13:07:04.354067Z	    3 Query	SELECT 1
+2023-06-19T13:07:04.354996Z	    3 Query	SELECT 1
+2023-06-19T13:07:04.355559Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:07:04.356322Z	    3 Query	SELECT 1
+2023-06-19T13:07:04.356784Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:07:04.390293Z	    3 Query	SELECT 1
+2023-06-19T13:07:04.390774Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:07:04.576485Z	    3 Query	SELECT 1
+2023-06-19T13:07:04.577084Z	    3 Query	select info from information_schema.processlist where user = 'rdsadmin' and host like 'localhost%'
+2023-06-19T13:07:04.595173Z	    3 Query	SELECT 1
+2023-06-19T13:07:04.595746Z	    3 Query	select count(*) from mysql.user WHERE concat(trim(user), '@', trim(host)) NOT IN ('rdsadmin@localhost') AND (Shutdown_priv = 'y' OR File_priv = 'y' OR Super_priv = 'y')
+2023-06-19T13:07:04.596830Z	    3 Query	SELECT 1
+2023-06-19T13:07:04.597334Z	    3 Query	select count(*) from information_schema.routines where ROUTINE_SCHEMA <> 'mysql' and DEFINER = 'rdsadmin@localhost'
+2023-06-19T13:07:04.601545Z	    3 Query	SELECT 1
+2023-06-19T13:07:04.602113Z	    3 Query	select count(*) from performance_schema.global_variables
+where variable_name = 'general_log_file'
+and variable_value <> '/rdsdbdata/log/general/mysql-general.log'
+and (select variable_value from performance_schema.global_variables where variable_name = 'character_set_filesystem') not in ('ucs2', 'utf16', 'utf32')
+2023-06-19T13:07:04.605034Z	    3 Query	SELECT 1
+2023-06-19T13:07:04.605595Z	    3 Query	select count(*) from performance_schema.global_variables
+where variable_name = 'slow_query_log_file'
+and variable_value <> '/rdsdbdata/log/slowquery/mysql-slowquery.log'
+and (select variable_value from performance_schema.global_variables where variable_name = 'character_set_filesystem') not in ('ucs2', 'utf16', 'utf32')
+2023-06-19T13:07:04.607801Z	    3 Query	SELECT 1
+2023-06-19T13:07:04.608346Z	    3 Query	select count(*) from information_schema.events where definer = 'rdsadmin@localhost' and (EVENT_SCHEMA <> 'mysql' or (EVENT_SCHEMA = 'mysql' and EVENT_NAME not in ('ev_rds_gsh_collector', 'ev_rds_gsh_table_rotation', 'ev_gsh_collector', 'ev_gsh_table_rotation')))
+2023-06-19T13:07:04.637349Z	    3 Query	SELECT 1
+2023-06-19T13:07:04.637895Z	    3 Query	select lower(plugin_name) from information_schema.plugins
+2023-06-19T13:07:04.658875Z	    3 Query	SELECT 1
+2023-06-19T13:07:04.661144Z	    3 Query	select lower(plugin_name) from information_schema.plugins
+2023-06-19T13:07:19.354207Z	    3 Query	SELECT 1
+2023-06-19T13:07:19.354808Z	    3 Query	SELECT 1
+2023-06-19T13:07:19.355736Z	    3 Query	SELECT 1
+2023-06-19T13:07:19.356341Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:07:19.357126Z	    3 Query	SELECT 1
+2023-06-19T13:07:19.357656Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:07:19.392946Z	    3 Query	SELECT 1
+2023-06-19T13:07:19.393489Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:07:34.353381Z	    3 Query	SELECT 1
+2023-06-19T13:07:34.353953Z	    3 Query	SELECT 1
+2023-06-19T13:07:34.354855Z	    3 Query	SELECT 1
+2023-06-19T13:07:34.355420Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:07:34.356185Z	    3 Query	SELECT 1
+2023-06-19T13:07:34.356653Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:07:34.391701Z	    3 Query	SELECT 1
+2023-06-19T13:07:34.392244Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:07:49.353996Z	    3 Query	SELECT 1
+2023-06-19T13:07:49.354580Z	    3 Query	SELECT 1
+2023-06-19T13:07:49.355528Z	    3 Query	SELECT 1
+2023-06-19T13:07:49.356111Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:07:49.356889Z	    3 Query	SELECT 1
+2023-06-19T13:07:49.357372Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:07:49.359387Z	    3 Query	SELECT 1
+2023-06-19T13:07:49.359938Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:07:49.360672Z	    3 Query	SELECT 1
+2023-06-19T13:07:49.361489Z	    3 Query	SELECT @@session.transaction_read_only
+2023-06-19T13:07:49.361792Z	    3 Query	INSERT INTO mysql.rds_heartbeat2(id, value) values (1,1687180069360) ON DUPLICATE KEY UPDATE value = 1687180069360
+2023-06-19T13:07:49.374009Z	    3 Query	SELECT 1
+2023-06-19T13:07:49.374529Z	    3 Query	SELECT @@session.transaction_read_only
+2023-06-19T13:07:49.374818Z	    3 Query	COMMIT
+2023-06-19T13:07:49.404621Z	    3 Query	SELECT 1
+2023-06-19T13:07:49.405124Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:08:00.022188Z	    3 Query	SELECT 1
+2023-06-19T13:08:00.090972Z	    3 Query	SELECT count(*) from mysql.rds_history WHERE action = 'disable set master' GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port,master_user,master_log_file ,master_log_pos,master_ssl ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:08:00.306972Z	    3 Query	SELECT 1
+2023-06-19T13:08:00.457112Z	    3 Query	SELECT count(*) from mysql.rds_replication_status WHERE master_host IS NOT NULL and master_port IS NOT NULL GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:08:04.353661Z	    3 Query	SELECT 1
+2023-06-19T13:08:04.354230Z	    3 Query	SELECT 1
+2023-06-19T13:08:04.355148Z	    3 Query	SELECT 1
+2023-06-19T13:08:04.355707Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:08:04.356487Z	    3 Query	SELECT 1
+2023-06-19T13:08:04.356962Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:08:04.386980Z	    3 Query	SELECT 1
+2023-06-19T13:08:04.387531Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:08:19.353938Z	    3 Query	SELECT 1
+2023-06-19T13:08:19.354508Z	    3 Query	SELECT 1
+2023-06-19T13:08:19.355413Z	    3 Query	SELECT 1
+2023-06-19T13:08:19.356003Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:08:19.356785Z	    3 Query	SELECT 1
+2023-06-19T13:08:19.357272Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:08:19.387591Z	    3 Query	SELECT 1
+2023-06-19T13:08:19.388133Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:08:34.353568Z	    3 Query	SELECT 1
+2023-06-19T13:08:34.354196Z	    3 Query	SELECT 1
+2023-06-19T13:08:34.355089Z	    3 Query	SELECT 1
+2023-06-19T13:08:34.355679Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:08:34.356428Z	    3 Query	SELECT 1
+2023-06-19T13:08:34.356896Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:08:34.386933Z	    3 Query	SELECT 1
+2023-06-19T13:08:34.387495Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:08:49.353684Z	    3 Query	SELECT 1
+2023-06-19T13:08:49.354232Z	    3 Query	SELECT 1
+2023-06-19T13:08:49.355125Z	    3 Query	SELECT 1
+2023-06-19T13:08:49.355663Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:08:49.356452Z	    3 Query	SELECT 1
+2023-06-19T13:08:49.356915Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:08:49.386487Z	    3 Query	SELECT 1
+2023-06-19T13:08:49.387060Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:09:00.090450Z	    3 Query	SELECT 1
+2023-06-19T13:09:00.145929Z	    3 Query	SELECT count(*) from mysql.rds_history WHERE action = 'disable set master' GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port,master_user,master_log_file ,master_log_pos,master_ssl ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:09:00.322927Z	    3 Query	SELECT 1
+2023-06-19T13:09:00.409002Z	    3 Query	SELECT count(*) from mysql.rds_replication_status WHERE master_host IS NOT NULL and master_port IS NOT NULL GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:09:04.354002Z	    3 Query	SELECT 1
+2023-06-19T13:09:04.354571Z	    3 Query	SELECT 1
+2023-06-19T13:09:04.355461Z	    3 Query	SELECT 1
+2023-06-19T13:09:04.356012Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:09:04.356773Z	    3 Query	SELECT 1
+2023-06-19T13:09:04.357239Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:09:04.386502Z	    3 Query	SELECT 1
+2023-06-19T13:09:04.387121Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:09:19.353749Z	    3 Query	SELECT 1
+2023-06-19T13:09:19.354356Z	    3 Query	SELECT 1
+2023-06-19T13:09:19.355248Z	    3 Query	SELECT 1
+2023-06-19T13:09:19.355863Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:09:19.356616Z	    3 Query	SELECT 1
+2023-06-19T13:09:19.357103Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:09:19.387573Z	    3 Query	SELECT 1
+2023-06-19T13:09:19.388109Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:09:34.353286Z	    3 Query	SELECT 1
+2023-06-19T13:09:34.353836Z	    3 Query	SELECT 1
+2023-06-19T13:09:34.354735Z	    3 Query	SELECT 1
+2023-06-19T13:09:34.355309Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:09:34.356093Z	    3 Query	SELECT 1
+2023-06-19T13:09:34.356565Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:09:34.385836Z	    3 Query	SELECT 1
+2023-06-19T13:09:34.386354Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:09:49.353569Z	    3 Query	SELECT 1
+2023-06-19T13:09:49.354147Z	    3 Query	SELECT 1
+2023-06-19T13:09:49.355076Z	    3 Query	SELECT 1
+2023-06-19T13:09:49.355657Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:09:49.356490Z	    3 Query	SELECT 1
+2023-06-19T13:09:49.356967Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:09:49.386613Z	    3 Query	SELECT 1
+2023-06-19T13:09:49.387248Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:09:57.748197Z	    8 Connect	admin@10.0.10.140 on  using SSL/TLS
+2023-06-19T13:09:57.748242Z	    8 Connect	Access denied for user 'admin'@'10.0.10.140' (using password: YES)
+2023-06-19T13:10:00.082243Z	    3 Query	SELECT 1
+2023-06-19T13:10:00.185483Z	    3 Query	SELECT count(*) from mysql.rds_history WHERE action = 'disable set master' GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port,master_user,master_log_file ,master_log_pos,master_ssl ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:10:00.511568Z	    3 Query	SELECT 1
+2023-06-19T13:10:00.607770Z	    3 Query	SELECT count(*) from mysql.rds_replication_status WHERE master_host IS NOT NULL and master_port IS NOT NULL GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:10:00.711928Z	    3 Query	SELECT 1
+2023-06-19T13:10:00.750913Z	    3 Query	SELECT @@session.transaction_read_only
+2023-06-19T13:10:00.783413Z	    3 Query	flush logs
+/rdsdbbin/mysql/bin/mysqld, Version: 5.7.37-log (Source distribution). started with:
+Tcp port: 3306  Unix socket: /tmp/mysql.sock
+Time                 Id Command    Argument
+2023-06-19T13:10:04.205376Z	    9 Connect	admin@10.0.10.140 on  using SSL/TLS
+2023-06-19T13:10:04.206526Z	    9 Query	select @@version_comment limit 1
+2023-06-19T13:10:04.353264Z	    3 Query	SELECT 1
+2023-06-19T13:10:04.353806Z	    3 Query	SELECT 1
+2023-06-19T13:10:04.354663Z	    3 Query	SELECT 1
+2023-06-19T13:10:04.355237Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:10:04.356011Z	    3 Query	SELECT 1
+2023-06-19T13:10:04.356471Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:10:04.378433Z	   10 Connect	rdsadmin@localhost on  using Socket
+2023-06-19T13:10:04.378488Z	   10 Statistics	
+2023-06-19T13:10:04.381083Z	   10 Quit	
+2023-06-19T13:10:04.409188Z	    3 Query	SELECT 1
+2023-06-19T13:10:04.409773Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:10:12.085907Z	    9 Query	SELECT DATABASE()
+2023-06-19T13:10:12.087016Z	    9 Init DB	udacity
+2023-06-19T13:10:12.088845Z	    9 Query	show databases
+2023-06-19T13:10:12.090108Z	    9 Query	show tables
+2023-06-19T13:10:12.091328Z	    9 Field List	Students 
+2023-06-19T13:10:19.354027Z	    3 Query	SELECT 1
+2023-06-19T13:10:19.354620Z	    3 Query	SELECT 1
+2023-06-19T13:10:19.355577Z	    3 Query	SELECT 1
+2023-06-19T13:10:19.356134Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:10:19.356895Z	    3 Query	SELECT 1
+2023-06-19T13:10:19.357356Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:10:19.387171Z	    3 Query	SELECT 1
+2023-06-19T13:10:19.387696Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:10:25.008210Z	    3 Query	SELECT 1
+2023-06-19T13:10:25.016872Z	    3 Query	SELECT NAME, VALUE FROM mysql.rds_configuration
+2023-06-19T13:10:25.073877Z	    3 Query	SELECT 1
+2023-06-19T13:10:25.082208Z	    3 Query	SELECT @@session.transaction_read_only
+2023-06-19T13:10:25.098163Z	    3 Query	PURGE BINARY LOGS BEFORE '2023-06-19 13:05:00'
+2023-06-19T13:10:32.123349Z	    9 Query	SELECT * FROM Students
+2023-06-19T13:10:34.353469Z	    3 Query	SELECT 1
+2023-06-19T13:10:34.354114Z	    3 Query	SELECT 1
+2023-06-19T13:10:34.355006Z	    3 Query	SELECT 1
+2023-06-19T13:10:34.355564Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:10:34.356315Z	    3 Query	SELECT 1
+2023-06-19T13:10:34.356784Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:10:34.389766Z	    3 Query	SELECT 1
+2023-06-19T13:10:34.390303Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:10:47.553331Z	    9 Query	INSERT INTO Students (FirstName,LastName,Email,Age) VALUES ('test','test','test@gmail.com',24)
+2023-06-19T13:10:49.353369Z	    3 Query	SELECT 1
+2023-06-19T13:10:49.353897Z	    3 Query	SELECT 1
+2023-06-19T13:10:49.354761Z	    3 Query	SELECT 1
+2023-06-19T13:10:49.355333Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:10:49.356122Z	    3 Query	SELECT 1
+2023-06-19T13:10:49.356586Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:10:49.386486Z	    3 Query	SELECT 1
+2023-06-19T13:10:49.387122Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:10:51.954121Z	    9 Query	SELECT * FROM Students
+2023-06-19T13:11:00.020171Z	    3 Query	SELECT 1
+2023-06-19T13:11:00.084442Z	    3 Query	SELECT count(*) from mysql.rds_history WHERE action = 'disable set master' GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port,master_user,master_log_file ,master_log_pos,master_ssl ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:11:00.259280Z	    3 Query	SELECT 1
+2023-06-19T13:11:00.262406Z	    3 Query	SELECT count(*) from mysql.rds_replication_status WHERE master_host IS NOT NULL and master_port IS NOT NULL GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:11:04.353566Z	    3 Query	SELECT 1
+2023-06-19T13:11:04.354278Z	    3 Query	SELECT 1
+2023-06-19T13:11:04.355230Z	    3 Query	SELECT 1
+2023-06-19T13:11:04.355801Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:11:04.356585Z	    3 Query	SELECT 1
+2023-06-19T13:11:04.357064Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:11:04.387961Z	    3 Query	SELECT 1
+2023-06-19T13:11:04.388523Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:11:19.353373Z	    3 Query	SELECT 1
+2023-06-19T13:11:19.353996Z	    3 Query	SELECT 1
+2023-06-19T13:11:19.354912Z	    3 Query	SELECT 1
+2023-06-19T13:11:19.355492Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:11:19.356270Z	    3 Query	SELECT 1
+2023-06-19T13:11:19.356798Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:11:19.391692Z	    3 Query	SELECT 1
+2023-06-19T13:11:19.392263Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:11:34.354029Z	    3 Query	SELECT 1
+2023-06-19T13:11:34.354702Z	    3 Query	SELECT 1
+2023-06-19T13:11:34.355632Z	    3 Query	SELECT 1
+2023-06-19T13:11:34.356197Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:11:34.356985Z	    3 Query	SELECT 1
+2023-06-19T13:11:34.357464Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:11:34.391949Z	    3 Query	SELECT 1
+2023-06-19T13:11:34.392486Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:11:49.353492Z	    3 Query	SELECT 1
+2023-06-19T13:11:49.354134Z	    3 Query	SELECT 1
+2023-06-19T13:11:49.355043Z	    3 Query	SELECT 1
+2023-06-19T13:11:49.355587Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:11:49.356352Z	    3 Query	SELECT 1
+2023-06-19T13:11:49.356816Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:11:49.391108Z	    3 Query	SELECT 1
+2023-06-19T13:11:49.391744Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:12:00.021483Z	    3 Query	SELECT 1
+2023-06-19T13:12:00.094452Z	    3 Query	SELECT count(*) from mysql.rds_history WHERE action = 'disable set master' GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port,master_user,master_log_file ,master_log_pos,master_ssl ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:12:00.318253Z	    3 Query	SELECT 1
+2023-06-19T13:12:00.343792Z	    3 Query	SELECT count(*) from mysql.rds_replication_status WHERE master_host IS NOT NULL and master_port IS NOT NULL GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:12:04.353832Z	    3 Query	SELECT 1
+2023-06-19T13:12:04.354493Z	    3 Query	SELECT 1
+2023-06-19T13:12:04.355424Z	    3 Query	SELECT 1
+2023-06-19T13:12:04.355996Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:12:04.356782Z	    3 Query	SELECT 1
+2023-06-19T13:12:04.357261Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:12:04.392988Z	    3 Query	SELECT 1
+2023-06-19T13:12:04.393551Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:12:19.353719Z	    3 Query	SELECT 1
+2023-06-19T13:12:19.354300Z	    3 Query	SELECT 1
+2023-06-19T13:12:19.355198Z	    3 Query	SELECT 1
+2023-06-19T13:12:19.355749Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:12:19.356516Z	    3 Query	SELECT 1
+2023-06-19T13:12:19.356985Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:12:19.391052Z	    3 Query	SELECT 1
+2023-06-19T13:12:19.391599Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:12:34.353452Z	    3 Query	SELECT 1
+2023-06-19T13:12:34.354017Z	    3 Query	SELECT 1
+2023-06-19T13:12:34.354922Z	    3 Query	SELECT 1
+2023-06-19T13:12:34.355474Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:12:34.356248Z	    3 Query	SELECT 1
+2023-06-19T13:12:34.356750Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:12:34.391678Z	    3 Query	SELECT 1
+2023-06-19T13:12:34.392232Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:12:49.353435Z	    3 Query	SELECT 1
+2023-06-19T13:12:49.354084Z	    3 Query	SELECT 1
+2023-06-19T13:12:49.354983Z	    3 Query	SELECT 1
+2023-06-19T13:12:49.355529Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:12:49.356299Z	    3 Query	SELECT 1
+2023-06-19T13:12:49.356760Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:12:49.386114Z	    3 Query	SELECT 1
+2023-06-19T13:12:49.386630Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:13:00.022401Z	    3 Query	SELECT 1
+2023-06-19T13:13:00.084661Z	    3 Query	SELECT count(*) from mysql.rds_history WHERE action = 'disable set master' GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port,master_user,master_log_file ,master_log_pos,master_ssl ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:13:00.290892Z	    3 Query	SELECT 1
+2023-06-19T13:13:00.309594Z	    3 Query	SELECT count(*) from mysql.rds_replication_status WHERE master_host IS NOT NULL and master_port IS NOT NULL GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:13:04.353697Z	    3 Query	SELECT 1
+2023-06-19T13:13:04.354357Z	    3 Query	SELECT 1
+2023-06-19T13:13:04.355297Z	    3 Query	SELECT 1
+2023-06-19T13:13:04.355868Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:13:04.356658Z	    3 Query	SELECT 1
+2023-06-19T13:13:04.357136Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:13:04.359140Z	    3 Query	SELECT 1
+2023-06-19T13:13:04.359707Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:13:04.360461Z	    3 Query	SELECT 1
+2023-06-19T13:13:04.361319Z	    3 Query	SELECT @@session.transaction_read_only
+2023-06-19T13:13:04.361626Z	    3 Query	INSERT INTO mysql.rds_heartbeat2(id, value) values (1,1687180384360) ON DUPLICATE KEY UPDATE value = 1687180384360
+2023-06-19T13:13:04.373577Z	    3 Query	SELECT 1
+2023-06-19T13:13:04.374115Z	    3 Query	SELECT @@session.transaction_read_only
+2023-06-19T13:13:04.374395Z	    3 Query	COMMIT
+2023-06-19T13:13:04.405102Z	    3 Query	SELECT 1
+2023-06-19T13:13:04.405604Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:13:19.353793Z	    3 Query	SELECT 1
+2023-06-19T13:13:19.354435Z	    3 Query	SELECT 1
+2023-06-19T13:13:19.355339Z	    3 Query	SELECT 1
+2023-06-19T13:13:19.355895Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:13:19.356651Z	    3 Query	SELECT 1
+2023-06-19T13:13:19.357123Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:13:19.386277Z	    3 Query	SELECT 1
+2023-06-19T13:13:19.386782Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:13:34.353599Z	    3 Query	SELECT 1
+2023-06-19T13:13:34.354251Z	    3 Query	SELECT 1
+2023-06-19T13:13:34.355152Z	    3 Query	SELECT 1
+2023-06-19T13:13:34.355699Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:13:34.356462Z	    3 Query	SELECT 1
+2023-06-19T13:13:34.356924Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:13:34.388066Z	    3 Query	SELECT 1
+2023-06-19T13:13:34.388591Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:13:49.353823Z	    3 Query	SELECT 1
+2023-06-19T13:13:49.354454Z	    3 Query	SELECT 1
+2023-06-19T13:13:49.355356Z	    3 Query	SELECT 1
+2023-06-19T13:13:49.355907Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:13:49.356664Z	    3 Query	SELECT 1
+2023-06-19T13:13:49.357149Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:13:49.386122Z	    3 Query	SELECT 1
+2023-06-19T13:13:49.386615Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:14:00.021798Z	    3 Query	SELECT 1
+2023-06-19T13:14:00.090981Z	    3 Query	SELECT count(*) from mysql.rds_history WHERE action = 'disable set master' GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port,master_user,master_log_file ,master_log_pos,master_ssl ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:14:00.306530Z	    3 Query	SELECT 1
+2023-06-19T13:14:00.332910Z	    3 Query	SELECT count(*) from mysql.rds_replication_status WHERE master_host IS NOT NULL and master_port IS NOT NULL GROUP BY action_timestamp,called_by_user,action,mysql_version,master_host,master_port ORDER BY action_timestamp LIMIT 1
+2023-06-19T13:14:04.353376Z	    3 Query	SELECT 1
+2023-06-19T13:14:04.353959Z	    3 Query	SELECT 1
+2023-06-19T13:14:04.354893Z	    3 Query	SELECT 1
+2023-06-19T13:14:04.355489Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:14:04.356272Z	    3 Query	SELECT 1
+2023-06-19T13:14:04.356758Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:14:04.387368Z	    3 Query	SELECT 1
+2023-06-19T13:14:04.387932Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:14:19.353473Z	    3 Query	SELECT 1
+2023-06-19T13:14:19.354121Z	    3 Query	SELECT 1
+2023-06-19T13:14:19.355056Z	    3 Query	SELECT 1
+2023-06-19T13:14:19.355583Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:14:19.356411Z	    3 Query	SELECT 1
+2023-06-19T13:14:19.356872Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:14:19.387824Z	    3 Query	SELECT 1
+2023-06-19T13:14:19.388374Z	    3 Query	SELECT @@GLOBAL.read_only
+2023-06-19T13:14:34.353393Z	    3 Query	SELECT 1
+2023-06-19T13:14:34.354045Z	    3 Query	SELECT 1
+2023-06-19T13:14:34.354951Z	    3 Query	SELECT 1
+2023-06-19T13:14:34.355503Z	    3 Query	SELECT count(*) from information_schema.TABLES WHERE TABLE_SCHEMA = 'mysql' AND TABLE_NAME = 'rds_heartbeat2'
+2023-06-19T13:14:34.356256Z	    3 Query	SELECT 1
+2023-06-19T13:14:34.356721Z	    3 Query	SELECT value FROM mysql.rds_heartbeat2
+2023-06-19T13:14:34.386488Z	    3 Query	SELECT 1
+2023-06-19T13:14:34.387124Z	    3 Query	SELECT @@GLOBAL.read_only
